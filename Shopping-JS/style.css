@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%), linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%), linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 50px 20px 200px 20px;
+    width: 100%;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+h3 {
+    margin: 15px 0 15px 0;
+}
+
+.container {
+    margin: auto;
+    border: 1px solid rgb(189, 188, 188);
+    border-radius: 20px;
+    background: rgba(205, 205, 226, 0.3);
+}
+
+.items {
+    display: grid; 
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    padding: 20px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.items .single-item {
+    height: 800px;
+    border: 1px solid rgb(206, 197, 197);
+    border-radius: 30px;
+    padding: 20px;
+    background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7));
+}
+
+.items .single-item img {
+    width: 100%;
+    height: 400px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.description {
+    padding-bottom: 15px;
+}
+
+.rating {
+    color: rgb(11, 194, 179);
+    padding-bottom: 10px;
+}
+
+.price {
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 15px;
+}
+
+button {
+    color: rgb(58, 51, 51);
+    width: 150px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: block; 
+    margin: 0 auto;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    letter-spacing: 1px;
+    font-size: 17px;
+    -webkit-box-shadow: 3px 16px 49px 1px rgba(0,0,0,0.61);
+    -moz-box-shadow: 3px 16px 49px 1px rgba(0,0,0,0.61);
+    box-shadow: 3px 16px 49px 1px rgba(0,0,0,0.61);
+    font-weight: 900;
+}
+
+button:hover {
+    background-color: rgb(194, 200, 206);
+    color: rgb(223, 28, 28);
+}
+
+.total {
+    padding-top: 100px;
+    font-size: 25px;
+    color: #000000;
+    font-weight: 900;
+}    
+
+
+@media only screen and (max-width: 1200px) {
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 755px) {
+    .items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+ 
